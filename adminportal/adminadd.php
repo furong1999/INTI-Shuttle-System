@@ -1,38 +1,60 @@
 <?php
 require('dbconnect.php');
-if(isset($_POST['add'])){
+if(isset($_POST['add-button'])) {
     $busid = $_POST['bid'];
-    $starttime = $_POST['ti'];
+    $starttime = $_POST['time'];
     $capacity = $_POST['cap'];
-    $route = $_POST['routes'];
-
-    //$sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+    $route = $_POST['route'];
 
     $sql_b = "SELECT * FROM schedule WHERE BusID='$busid'";
     $sql_t = "SELECT * FROM schedule WHERE StartTime ='$starttime'";
-    $result = mysqli_query($conn,$sql_b);
+    $sql_r = "SELECT * FROM schedule WHERE Route ='$route'";
+    $result = mysqli_query($conn, $sql_b);
     $result1 = mysqli_query($conn, $sql_t);
+    $result2 = mysqli_query($conn, $sql_r);
     $b = mysqli_num_rows($result);
     $t = mysqli_num_rows($result1);
+    $r = mysqli_num_rows($result2);
 
-    if(empty($bid) || empty($starttime) || empty($capacity) || empty($route)){
+    if (empty($busid) || empty($starttime) || empty($capacity) || empty($route)) {
         echo "<script>alert('The form is not complete!');</script>";
         echo "<script>location.href=\"adminadd.php\"</script>";
         exit();
-    }else {
-        if($b > 0 && $t > 0){
-            echo "<script>alert('bus id and time already registered!');</script>";
-            echo "<script>location.href=\"adminadd.php\"</script>";
-            exit();
+    }else{
+        if ($b > 0) {
+            if ($t > 0) {
+                echo "<script>alert('Bus id and time already registered!');</script>";
+                echo "<script>location.href=\"adminadd.php\"</script>";
+                exit();
+            }else {
+                $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+                if (mysqli_query($conn, $sql)) {
+                    echo "<script>alert('New schedule added successfully!');</script>";
+                    echo "<script>location.href=\"adminadd.php\"</script>";
+                    exit();
+                }
+            }
         }
-        elseif (is_int($capacity) == false) {
-            echo "<script>alert('capacity must be integer!');</script>";
-            echo "<script>location.href=\"adminadd.php\"</script>";
-            exit();
-        } else {
+        elseif($t > 0){
+            if($r > 0){
+                echo "<script>alert('Time and route exists!');</script>";
+                echo "<script>location.href=\"adminadd.php\"</script>";
+                exit();
+            }else {
+                $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+                if (mysqli_query($conn, $sql)) {
+                    echo "<script>alert('New schedule added successfully!');</script>";
+                    echo "<script>location.href=\"adminadd.php\"</script>";
+                    exit();
+                }
+            }
+
+        }
+        else {
             $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
-            if (mysqli_query($conn, $sql)){
+            if (mysqli_query($conn, $sql)) {
                 echo "<script>alert('New schedule added successfully!');</script>";
+                echo "<script>location.href=\"adminadd.php\"</script>";
                 exit();
             }
         }
@@ -156,7 +178,7 @@ if(isset($_POST['add'])){
                             <strong class="card-title">Please fill in the form</strong>
                         </div>
                         <div class="card-body card-block">
-                            <form action="adminadd.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <form action="adminadd.php" method="post" >
                                 <div class="row form-group">
                                     <div class="col col-md-3"><label for="text-input" class=" form-control-label">Bus ID</label></div>
                                     <div class="col-12 col-md-9"><input type="text" id="text-input" name="bid" placeholder="Eg: 1001" class="form-control"><small class="form-text text-muted">Please enter your bus ID.</small></div>
@@ -165,7 +187,7 @@ if(isset($_POST['add'])){
                                 <div class="row form-group">
                                     <div class="col col-md-3"><label for="select" class=" form-control-label">Select Time</label></div>
                                     <div class="col-12 col-md-9">
-                                        <select name="ti" id="select" class="form-control">
+                                        <select name="time" id="select" class="form-control">
                                             <option value="0">Please select</option>
                                             <option value="7am">7am</option>
                                             <option value="8am">8am</option>
@@ -194,52 +216,52 @@ if(isset($_POST['add'])){
                                         <div class="form-check">
                                             <div class="radio">
                                                 <label for="radio1" class="form-check-label ">
-                                                    <input type="radio" id="radio1" name="routes" value="INTI - Elit Avenue" class="form-check-input">INTI - Elit Avenue
+                                                    <input type="radio" id="radio1" name="route" value="INTI - Elit Avenue" class="form-check-input">INTI - Elit Avenue
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio2" class="form-check-label ">
-                                                    <input type="radio" id="radio2" name="routes" value="Elit Avenue - INTI" class="form-check-input">Elit Avenue - INTI
+                                                    <input type="radio" id="radio2" name="route" value="Elit Avenue - INTI" class="form-check-input">Elit Avenue - INTI
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio3" class="form-check-label ">
-                                                    <input type="radio" id="radio3" name="routes" value="PCGHS - One Stop - McD Greenlane - INTI" class="form-check-input">PCGHS - One Stop - McD Greenlane - INTI
+                                                    <input type="radio" id="radio3" name="route" value="PCGHS - One Stop - McD Greenlane - INTI" class="form-check-input">PCGHS - One Stop - McD Greenlane - INTI
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio4" class="form-check-label ">
-                                                    <input type="radio" id="radio4" name="routes" value="INTI- McD Greenlane- One Stop - PCGHS" class="form-check-input">INTI- McD Greenlane- One Stop - PCGHS
+                                                    <input type="radio" id="radio4" name="route" value="INTI- McD Greenlane- One Stop - PCGHS" class="form-check-input">INTI- McD Greenlane- One Stop - PCGHS
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio5" class="form-check-label ">
-                                                    <input type="radio" id="radio5" name="routes" value="Isle of Life - Lengkok Kenari - INTI" class="form-check-input">Isle of Life - Lengkok Kenari - INTI
+                                                    <input type="radio" id="radio5" name="route" value="Isle of Life - Lengkok Kenari - INTI" class="form-check-input">Isle of Life - Lengkok Kenari - INTI
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio6" class="form-check-label ">
-                                                    <input type="radio" id="radio6" name="routes" value="INTI - Lengkok Kenari - Isle of Life" class="form-check-input">INTI - Lengkok Kenari - Isle of Life
+                                                    <input type="radio" id="radio6" name="route" value="INTI - Lengkok Kenari - Isle of Life" class="form-check-input">INTI - Lengkok Kenari - Isle of Life
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio7" class="form-check-label ">
-                                                    <input type="radio" id="radio7" name="routes" value="Sunshine Lip Sin - Jalan Bukit Gambir - INTI" class="form-check-input">Sunshine Lip Sin - Jalan Bukit Gambir - INTI
+                                                    <input type="radio" id="radio7" name="route" value="Sunshine Lip Sin - Jalan Bukit Gambir - INTI" class="form-check-input">Sunshine Lip Sin - Jalan Bukit Gambir - INTI
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio8" class="form-check-label ">
-                                                    <input type="radio" id="radio8" name="routes" value="INTI - Jalan Bukit Gambir - Sunshine Lip Sin" class="form-check-input">INTI - Jalan Bukit Gambir - Sunshine Lip Sin
+                                                    <input type="radio" id="radio8" name="route" value="INTI - Jalan Bukit Gambir - Sunshine Lip Sin" class="form-check-input">INTI - Jalan Bukit Gambir - Sunshine Lip Sin
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio9" class="form-check-label ">
-                                                    <input type="radio" id="radio9" name="routes" value="Golden Triangle - Fairview International School - INTI" class="form-check-input">Golden Triangle - Fairview International School - INTI
+                                                    <input type="radio" id="radio9" name="route" value="Golden Triangle - Fairview International School - INTI" class="form-check-input">Golden Triangle - Fairview International School - INTI
                                                 </label>
                                             </div>
                                             <div class="radio">
                                                 <label for="radio10" class="form-check-label ">
-                                                    <input type="radio" id="radio10" name="routes" value="INTI - Fairview International School - Golden Triangle " class="form-check-input">INTI - Fairview International School - Golden Triangle
+                                                    <input type="radio" id="radio10" name="route" value="INTI - Fairview International School - Golden Triangle " class="form-check-input">INTI - Fairview International School - Golden Triangle
                                                 </label>
                                             </div>
                                         </div>
@@ -247,9 +269,7 @@ if(isset($_POST['add'])){
                                 </div>
 
                                 <div>
-                                    <button id="add" type="submit" class="btn btn-lg btn-info btn-block">
-                                        <span id="add-button">Add</span>
-                                    </button>
+                                    <button id="add" type="submit" class="btn btn-lg btn-info btn-block" name="add-button">Add</button>
                                 </div>
                             </form>
                         </div>
