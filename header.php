@@ -84,7 +84,7 @@ session_start();
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="login.php">Sign In</a></li>
                                 <li><a href="signup.php">Sign Up</a></li>
-                                
+                                <li><a href="resetpassword.php">Forget Password</a></li>
                                 ';
                                 }?>
 

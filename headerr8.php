@@ -19,27 +19,6 @@ session_start();
     <link rel="stylesheet" type="text/css" href="homedesign/flipcard/style.css">
 
 
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/animsition/css/animsition.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/vendor/daterangepicker/daterangepicker.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="Login_v15/css/util.css">
-    <link rel="stylesheet" type="text/css" href="Login_v15/css/main.css">
-    <!--===============================================================================================-->
-
     <link rel="stylesheet" href="colorlib-regform-8/fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="colorlib-regform-8/css/style.css"
 
@@ -100,13 +79,14 @@ session_start();
                                 }else{
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">Home</a></li>
+                                <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="">About us</a></li>
                                 <li><a href="busdrivercontact.php">Bus Drivers</a></li>
                                 <li><a href="#">Bus Schedule</a></li>                                               
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="login.php">Sign In</a></li>
                                 <li><a href="signup.php">Sign Up</a></li>
+                                <li><a href="resetpassword.php">Forget Password</a></li>
                                 
                                 ';
                                 }?>

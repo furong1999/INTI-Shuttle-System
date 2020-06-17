@@ -59,7 +59,7 @@ if(isset($_POST['login-submit'])){
 
                     }if ($username == "admin" && $password == "admin" ){
                         echo "<script>alert('Successfully login!');</script>";
-                        echo "<script>location.href=\"../merge2/adminportal/index.php\"</script>";
+                        echo "<script>location.href=\"adminportal/index.php\"</script>";
 
                     } else if ($_SESSION['user'] = $username) {
                         echo "<script>alert('Successfully login!');</script>";
@@ -95,7 +95,7 @@ if(isset($_POST['login-submit'])){
     </div>
 </section>
 
-<!--Sign up form-->
+<!--Login form-->
 <div class="main">
 
     <section class="signup">
