@@ -1,13 +1,13 @@
-
-
 <?php
+require 'headerr8.php';
 
+require 'logincredentials.php';
 
 $username_err = $password_err = "";
 
 if(isset($_POST['login-submit'])){
 
-    require 'logincredentials.php';
+
 
     $username = $_POST['uid'];
     $password = $_POST['pwd'];
@@ -39,11 +39,28 @@ if(isset($_POST['login-submit'])){
                     exit();
 
                 } else if ($pwdCheck == true) {
-                    if ($username == "admin" && $password == "admin") {
-                        $_SESSION['admin'] = $username;
+                    if ($username == "bus" && $password == "bus") {
+                        $_SESSION['bus'] = $username;
                         echo "<script>alert('Successfully login!');</script>";
-                        echo "<script>location.href=\"adminportal/index.php\"</script>";
+                        echo "<script>location.href=\"index.php\"</script>";
                         exit();
+
+                    }if ($username == "bus2" && $password == "bus2") {
+                        $_SESSION['bus2'] = $username;
+                        echo "<script>alert('Successfully login!');</script>";
+                        echo "<script>location.href=\"index.php\"</script>";
+                        exit();
+
+                    }if ($username == "bus3" && $password == "bus3") {
+                        $_SESSION['bus3'] = $username;
+                        echo "<script>alert('Successfully login!');</script>";
+                        echo "<script>location.href=\"index.php\"</script>";
+                        exit();
+
+                    }if ($username == "admin" && $password == "admin" ){
+                        echo "<script>alert('Successfully login!');</script>";
+                        echo "<script>location.href=\"../merge2/adminportal/index.php\"</script>";
+
                     } else if ($_SESSION['user'] = $username) {
                         echo "<script>alert('Successfully login!');</script>";
                         echo "<script>location.href=\"index.php\"</script>";
@@ -51,6 +68,7 @@ if(isset($_POST['login-submit'])){
                     }
 
                 }
+
             }
 
             else{
@@ -66,77 +84,44 @@ if(isset($_POST['login-submit'])){
 
 
 }
-
-
-
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="colorlib-regform-7/css/style.css">
-    <link rel="stylesheet" href="colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.min.css">
-
-    <!-- Main css -->
-    <link rel="stylesheet" href="colorlib-regform-7/css/style.css">
-
-</head>
-<body>
-
-<div class="main">
-<!--  Login  Form -->
-<section class="sign-in">
-    <div class="container">
-        <div class="signin-content">
-            <div class="signin-image">
-                <figure><img src="colorlib-regform-7/images/computer.jpg" alt="sign in image"></figure>
-                <form action="login.php" method="POST">
-                    <p class="loginhere">
-                        Haven't register? <a href="signup.php" class="loginhere-link">Register here</a>
-                    </p>
-                </form>
-            </div>
-
-            <div class="signin-form">
-                <h2 class="form-title">Sign In</h2>
-                <form method="POST" class="register-form" id="login-form">
-                    <div class="form-group">
-                        <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" class="form-input" name="uid" placeholder="Username"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" class="form-input" name="pwd" id="password" placeholder="Password"/>
-                    </div>
-                    <div class="form-group">
-                       <a href="#" class="link">Forget Password
-                    </div>
-                    <div class="form-group form-button">
-                        <button type="submit" class="form-submit" name="login-submit">Login</button>
-                    </div>
-                </form>
-
+<section class="ftco-section">
+    <div class="container-fluid px-4">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+                <span class="subheading">Signup</span>
             </div>
         </div>
     </div>
 </section>
 
+<!--Sign up form-->
+<div class="main">
+
+    <section class="signup">
+        <div class="login-container">
+            <div class="signup-content">
+                <form action="login.php" method="POST">
+                    <h2 class="form-title">Login Account</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="uid" placeholder="Username"/>
+                        <span class="help-block"><?php echo $username_err; ?></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="pwd" id="password" placeholder="Password"/>
+                        <span class="help-block"><?php echo $password_err; ?></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit"class="form-submit" name="login-submit">Login</button>
+                    </div>
+                </form>
+                <form action="resetpassword.php" method="POST">
+                    <p class="loginhere">
+                        Forget passsword ? <a href="resetpassword.php" class="loginhere-link">Reset here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
 </div>
-
-<!-- JS -->
-<script src="colorlib-regform-7/vendor/jquery/jquery.min.js"></script>
-<script src="colorlib-regform-7/js/main.js"></script>
-<script src="colorlib-regform-7/vendor/jquery/jquery.min.js"></script>
-<script src="colorlib-regform-7/js/main.js"></script>
-
-</body>
-</html>
