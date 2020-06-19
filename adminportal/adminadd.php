@@ -1,12 +1,12 @@
 <?php
 require('dbconnect.php');
 if(isset($_POST['add-button'])) {
-    $busid = $_POST['bid'];
+    $dname = $_POST['drivername'];
     $starttime = $_POST['time'];
     $capacity = $_POST['cap'];
     $route = $_POST['route'];
 
-    $sql_b = "SELECT * FROM schedule WHERE BusID='$busid'";
+    $sql_b = "SELECT * FROM schedule WHERE DriverName='$dname'";
     $sql_t = "SELECT * FROM schedule WHERE StartTime ='$starttime'";
     $sql_r = "SELECT * FROM schedule WHERE Route ='$route'";
     $result = mysqli_query($conn, $sql_b);
@@ -16,7 +16,7 @@ if(isset($_POST['add-button'])) {
     $t = mysqli_num_rows($result1);
     $r = mysqli_num_rows($result2);
 
-    if (empty($busid) || empty($starttime) || empty($capacity) || empty($route)) {
+    if (empty($dname) || empty($starttime) || empty($capacity) || empty($route)) {
         echo "<script>alert('The form is not complete!');</script>";
         echo "<script>location.href=\"adminadd.php\"</script>";
         exit();
@@ -27,7 +27,7 @@ if(isset($_POST['add-button'])) {
                 echo "<script>location.href=\"adminadd.php\"</script>";
                 exit();
             }else {
-                $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+                $sql = "INSERT INTO schedule (DriverName,StartTime,Capacity,Route) VALUES('$dname', '$starttime', '$capacity', '$route')";
                 if (mysqli_query($conn, $sql)) {
                     echo "<script>alert('New schedule added successfully!');</script>";
                     echo "<script>location.href=\"adminadd.php\"</script>";
@@ -41,7 +41,7 @@ if(isset($_POST['add-button'])) {
                 echo "<script>location.href=\"adminadd.php\"</script>";
                 exit();
             }else {
-                $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+                $sql = "INSERT INTO schedule (DriverName,StartTime,Capacity,Route) VALUES('$dname', '$starttime', '$capacity', '$route')";
                 if (mysqli_query($conn, $sql)) {
                     echo "<script>alert('New schedule added successfully!');</script>";
                     echo "<script>location.href=\"adminadd.php\"</script>";
@@ -51,7 +51,7 @@ if(isset($_POST['add-button'])) {
 
         }
         else {
-            $sql = "INSERT INTO schedule VALUES('$busid', '$starttime', '$capacity', '$route')";
+            $sql = "INSERT INTO schedule(DriverName,StartTime,Capacity,Route) VALUES('$dname', '$starttime', '$capacity', '$route')";
             if (mysqli_query($conn, $sql)) {
                 echo "<script>alert('New schedule added successfully!');</script>";
                 echo "<script>location.href=\"adminadd.php\"</script>";
@@ -107,8 +107,8 @@ if(isset($_POST['add-button'])) {
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Manage Schedule</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="ti-plus"></i><a href="adminadd.php">Add Schedule</a></li>
-                        <li><i class="ti-minus"></i><a href="">Remove Schedule</a></li>
-                        <li><i class="ti-check"></i><a href="">Update Schedule</a></li>
+                        <li><i class="ti-minus"></i><a href="admindelete.php">Remove Schedule</a></li>
+                        <li><i class="ti-check"></i><a href="adminupdate.php">Update Schedule</a></li>
                     </ul>
                 </li>
 
@@ -180,8 +180,8 @@ if(isset($_POST['add-button'])) {
                         <div class="card-body card-block">
                             <form action="adminadd.php" method="post" >
                                 <div class="row form-group">
-                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Bus ID</label></div>
-                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="bid" placeholder="Eg: 1001" class="form-control"><small class="form-text text-muted">Please enter your bus ID.</small></div>
+                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Bus Driver Name</label></div>
+                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="drivername" placeholder="Eg: ABC" class="form-control"><small class="form-text text-muted">Please enter bus driver name.</small></div>
                                 </div>
 
                                 <div class="row form-group">
@@ -206,8 +206,14 @@ if(isset($_POST['add-button'])) {
                                 </div>
 
                                 <div class="row form-group">
-                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Capacity</label></div>
-                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="cap" placeholder="Eg: 25" class="form-control"><small class="form-text text-muted">Please enter the bus capacity.</small></div>
+                                    <div class="col col-md-3"><label for="select" class=" form-control-label">Select Capacity</label></div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="cap" id="select" class="form-control">
+                                            <option value="0">Please select</option>
+                                            <option value="20">20</option>
+                                            <option value="40">40</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div class="row form-group">
