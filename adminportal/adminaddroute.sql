@@ -25,10 +25,11 @@ DROP TABLE IF EXISTS `schedule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `schedule` (
-  `BusID` varchar(5) NOT NULL,
+  `BusID` int(11) NOT NULL,
+  `DriverName` varchar(30) NOT NULL,
   `StartTime` varchar(10) NOT NULL,
-  `Capacity` int(3) NOT NULL,
-  `Route` varchar (50) NOT NULL
+  `Capacity` varchar(3) NOT NULL,
+  `Route` varchar (100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -38,8 +39,14 @@ CREATE TABLE `schedule` (
 
 LOCK TABLES `schedule` WRITE;
 /*!40000 ALTER TABLE `schedule` DISABLE KEYS */;
-INSERT INTO `schedule` VALUES ('1001','7am',32,'Elit Avenue - INTI');
+INSERT INTO `schedule` VALUES (1,'Tan Chee Keong','7am','20','Elit Avenue - INTI');
 /*!40000 ALTER TABLE `schedule` ENABLE KEYS */;
+ALTER TABLE `schedule`
+  ADD PRIMARY KEY (`BusID`);
+
+ALTER TABLE `schedule`
+  MODIFY `BusID` int(10) NOT NULL AUTO_INCREMENT;
+COMMIT;
 UNLOCK TABLES;
 
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
