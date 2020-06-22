@@ -19,7 +19,7 @@ require 'headerr8.php';
     <section class="signup">
         <div class="login-container">
             <div class="signup-content">
-                <form action="resetrequest1.php" method="POST">
+                <form action="resetrequest.php" method="POST">
                     <h2 class="form-title">Reset Password</h2>
                     <?php
                     if (isset($_GET["reset"])) {

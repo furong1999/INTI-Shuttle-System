@@ -3,134 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e8799ab-8541-4057-bc98-205edca035d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminportal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminportal/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/21880c0ffe15753a53f8402e9f64e1077e071510/style.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/extend.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/fonts.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/global.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/minxi.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/2866be86c578bb583fbf023501bb9fd24cc3bf22/variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/3948936f84e1a30385e73a9be140b58b48c82e15/style.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/main.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/643489b018602f15119d8f44aeb7fc79468873a9/responsive.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/extend.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/fonts.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/global.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/minxi.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39/variables.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/main.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/.sass-cache/9dc767a56f3dc2f8a933300255cd2265f13191d4/responsive.scssc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/css/material-design-iconic-font.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-300italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-500italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-600.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-700italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-800italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/poppins-v5-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/fonts/poppins/roboto-condensed-v16-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/303COM Detailed Project Proposal-CoverPage-MarkingScheme_v2.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/bus1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/busmirror.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/campus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/computer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/computer2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/signin-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/images/signup-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/common/extend.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/common/fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/common/global.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/common/minxi.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/common/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/layouts/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/layouts/responsive.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/vendor/jquery/jquery-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/colorlib-regform-7/vendor/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headerr8.php" beforeDir="false" afterPath="$PROJECT_DIR$/headerr8.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resetpassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/resetpassword.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +51,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../maybee" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shuttle1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
@@ -215,7 +88,9 @@
       <workItem from="1591081430346" duration="4992000" />
       <workItem from="1591189315634" duration="689000" />
       <workItem from="1591271532275" duration="1851000" />
-      <workItem from="1592398964519" duration="2847000" />
+      <workItem from="1592398964519" duration="3371000" />
+      <workItem from="1592465981782" duration="785000" />
+      <workItem from="1592803276111" duration="3277000" />
     </task>
     <servers />
   </component>
@@ -255,10 +130,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592400710096">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592803488419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592400710096" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592803488419" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1592400825590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
