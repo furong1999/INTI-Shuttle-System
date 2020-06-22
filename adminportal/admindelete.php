@@ -120,16 +120,24 @@ require"dbconnect.php"
                         </div>
                         <div class="table-stats order-table ov-h">
                             <?php
+                                function delete($val){
+                                    $val = "<script>alert('Record Deleted!');</script>";
+                                    return $val;
+                                }
                                 if(isset($_POST['DeleteBtn'])){
                                     $key = $_POST['keyToDelete'];
                                     $check = mysqli_query($conn,"SELECT * FROM schedule WHERE BusID ='$key'");
                                     if (mysqli_num_rows($check)>0){
                                         $queryDelete = mysqli_query($conn,"DELETE from schedule WHERE BusID = '$key'")
-                                            or die ("Not Deleted".mysqli_error()); ?>
+                                            or die ("Not Deleted".mysqli_error());
+                                        echo delete($_POST['DeleteBtn']);
+                                        echo "<script>location.href=\"admindelete.php\"</script>";
+                                        exit();
+                                        ?>
 
-                                        <div class="alert alert-success">
-                                            <p>Record Deleted!</p>
-                                        </div>
+                                        <!--div class="alert alert-success">
+                                            <p>record deleted!</p>
+                                        </div-->
                             <?php
                                     }
                             } ?>
