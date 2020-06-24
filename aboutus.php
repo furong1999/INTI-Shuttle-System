@@ -10,9 +10,9 @@
         /* Style the tab */
         .tab {
             float: left;
-            border: 1px solid #ccc;
+            border: 1px solid #16181b;
             padding-top: 50px;
-            background-color: #f1f1f1;
+            background-color: #5c6bc0;
             width: 30%;
             height: 500px;
         }
@@ -34,19 +34,19 @@
 
         /* Change background color of buttons on hover */
         .tab button:hover {
-            background-color: #ddd;
+            background-color: #79ace9 ;
         }
 
         /* Create an active/current "tab button" class */
         .tab button.active {
-            background-color: #ccc;
+            background-color: #79ace9 ;
         }
 
         /* Style the tab content */
         .tabcontent {
-            background-color: #FFFFFF ;
+            background-color: #5c6bc0 ;
             float: left;
-            border: 1px solid #ccc;
+            border: 1px solid #16181b;
             width: 70%;
             border-left: none;
             height: 500px ;
