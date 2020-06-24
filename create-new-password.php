@@ -10,7 +10,7 @@ include("headerr8.php");
         <div class="container">
             <div class="row no-gutters slider-text align-items-end justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
-                    <h1 class="mb-2 bread">Signup</h1>
+                    <h1 class="mb-2 bread">New Password</h1>
                     <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home<i class="ion-ios-arrow-forward"></i></a></span> <span>SignUp <i class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
@@ -29,12 +29,22 @@ include("headerr8.php");
     <!--New password form-->
     <div class="main">
         <section class="signup">
+            <?php
+            $selector = $_GET["selector"];
+            $validator = $_GET["validator"];
 
+            if (empty($selector)|| empty($validator)){
+                echo "<script>alert('Could not validate your request!');</script>";
+                echo "<script>location.href=\"http://localhost:8080/INTI-Shuttle-System/resetpassword.php?reset=fail\"</script>";
+            }
+            else{
+                if (ctype_xdigit($selector) !== false && (ctype_xdigit($validator) !== false)){
+                    ?>
                     <div class="main">
                         <section class="signup">
                         <div class="login-container">
                             <div class="signup-content">
-                                <form action="reset-password.inc.php" method="POST">
+                                <form action="create-new-password.inc.php" method="POST">
                                     <h2 class="form-title">Change new password</h2>
                                     <div class="form-group">
                                         <input  type="hidden" name="selector" value="<?php echo $selector ?>">

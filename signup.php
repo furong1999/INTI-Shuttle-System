@@ -91,6 +91,7 @@ if(isset($_POST['signup-submit'])){
 
 
 
+
 <section class="ftco-section">
     <div class="container-fluid px-4">
         <div class="row justify-content-center mb-5 pb-2">
@@ -124,11 +125,6 @@ if(isset($_POST['signup-submit'])){
                         <div class="form-group">
                             <button type="submit"class="form-submit" name="signup-submit">Signup</button>
                         </div>
-                    </form>
-                    <form action="login.php" method="POST">
-                        <p class="loginhere">
-                           Have an account ? <a href="login.php" class="loginhere-link">Login here</a>
-                        </p>
                     </form>
                     <form action="resetpassword.php" method="POST">
                         <p class="loginhere">

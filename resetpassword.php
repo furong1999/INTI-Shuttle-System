@@ -5,15 +5,27 @@ require 'headerr8.php';
 
 
 
-<section class="ftco-section">
-    <div class="container-fluid px-4">
-        <div class="row justify-content-center mb-5 pb-2">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Signup</span>
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_all.jpg');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread">Reset password</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home<i class="ion-ios-arrow-forward"></i></a></span> <span>SignUp <i class="ion-ios-arrow-forward"></i></span></p>
             </div>
         </div>
     </div>
 </section>
+
+<section class="ftco-section">
+    <div class="container-fluid px-4">
+        <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Reset Password form-->
 <div class="main">
     <section class="signup">
@@ -31,7 +43,10 @@ require 'headerr8.php';
                             echo '<p class= "signupsuccess"> There is problem resetting your password !<br>Please proceed to your email and click the link again!</p>';
                         } elseif ($_GET["reset"] == "linkexpired") {
                             echo '<p class= "signupsuccess"> The link is expired!<br>Please enter your email again!</p>';
+                        }elseif ($_GET["reset"] == "notexist") {
+                            echo '<p class= "signupsuccess"> Your Email is not registered as user email!<br>Please enter a valid email!</p>';
                         }
+
                     }
 
 
