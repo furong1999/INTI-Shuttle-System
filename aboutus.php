@@ -1,45 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            padding-top: 50px;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 500px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            background-color: #FFFFFF ;
+            float: left;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 500px ;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
 <?php
 require 'header.php';
 ?>
+<h1 style="text-align:center" >INTI College Penang</h1>
+<div class="tab">
+    <button class="tablinks" onclick="openElement(event, 'Mission')" id="defaultOpen">Mission</button>
+    <button class="tablinks" onclick="openElement(event, 'Course')">Course</button>
+    <button class="tablinks" onclick="openElement(event, 'Location')">Location</button>
+</div>
+
+<div id="Mission" class="tabcontent">
+    <h3>Our Mission :</h3>
+    <p style="color: #131c21">We will provide the most international, innovative and individualised education.</p>
+</div>
+
+<div id="Course" class="tabcontent">
+    <h3>Course Offered :</h3>
+    <p style="color: #131c21"> - Business Administration  - Business Management </p>
+    <p style="color: #131c21"> - Accounting - Finance - American Degree Transfer Program</p>
+    <p style="color: #131c21"> - Hospitality - Law - Mass Communication</p>
+    <p style="color: #131c21"> - Information Technology - Computer Science - Computing </p>
+</div>
+
+<div id="Location" class="tabcontent">
+    <h3>Location :</h3>
+    <p style="color: #131c21">1-Z, Lebuh Bukit Jambul, Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang.</p>
+</div>
+
+<script>
+    function openElement(evt, elementName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(elementName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
 
 <body style="background: #5c6bc0"></body>
-
-        <div class="about-section">
-            <h1>About Us</h1>
-            <p>Some text about who we are and what we do.</p>
-            <p>     </p>
-
-        </div>
-
-
-<h1 style="text-align:center" >INTI College Penang</h1>
-
-
-<div class="row" style="background: #6dabe4">
-
-    <h2 style="text-align:left">Our Mission : </h2>
-</div>
-    <div class="row" style="background: #6dabe4">
-    <p style="color: #131c21" >>We will provide the most international, innovative and individualised education.</p>
-</div>
-
-    <div class="row" style="background: #ab8ce4 ">
-        <h2 style="text-align:left">Course Offered : </h2>
-    </div>
-<div class="row" style="background: #ab8ce4 ">
-    <p style="color: #131c21" > - Business Administration - Business Management - Accounting - Finance - American Degree Transfer Program</p>
-</div>
-<div class="row" style="background: #ab8ce4 ">
-    <p style="color: #131c21"> - Hospitality - Information Technology - Computer Science - Computing - Law - Mass Communication </p>
-</div>
-
-<div class="row" style="background: #b1dfbb ">
-    <h2 style="text-align:left">Our Location : </h2>
-</div>
-<div class="row" style="background: #b1dfbb ">
-    <p style="color: #131c21">1-Z, Lebuh Bukit Jambul, Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang</p>
-</div>
-
 
 
 <h1 style="text-align:center" >Gallery</h1>
