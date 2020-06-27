@@ -62,6 +62,7 @@ require 'header.php';
 <h1 style="text-align:center" >INTI College Penang</h1>
 <div class="tab">
     <button class="tablinks" onclick="openElement(event, 'Mission')" id="defaultOpen">Mission</button>
+    <button class="tablinks" onclick="openElement(event, 'WhyINTI')">Why INTI?</button>
     <button class="tablinks" onclick="openElement(event, 'Course')">Course</button>
     <button class="tablinks" onclick="openElement(event, 'Location')">Location</button>
 </div>
@@ -69,6 +70,14 @@ require 'header.php';
 <div id="Mission" class="tabcontent">
     <h3>Our Mission :</h3>
     <p style="color: #131c21">We will provide the most international, innovative and individualised education.</p>
+</div>
+
+<div id="WhyINTI" class="tabcontent">
+    <h3>Why INTI ? :</h3>
+    <p style="color: #131c21">Gain the best quality education with world class facilities and resources, regardless of your field of studies.</p>
+    <p style="color: #131c21">Experience quality education that prepares you to face the challenges in the global market.</p>
+    <p style="color: #131c21"> 99% of INTI graduates get jobs within 6 months</p>
+    <p style="color: #131c21">91% of INTI graduates get paid higher than the market minimum average.</p>
 </div>
 
 <div id="Course" class="tabcontent">
@@ -82,6 +91,7 @@ require 'header.php';
 <div id="Location" class="tabcontent">
     <h3>Location :</h3>
     <p style="color: #131c21">1-Z, Lebuh Bukit Jambul, Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang.</p>
+    <img src="Map/INTI.jpg" style="width:70%">
 </div>
 
 <script>

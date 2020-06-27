@@ -64,18 +64,26 @@ require 'header.php';
 </div>
 
 <div id="Me" class="tabcontent">
-    <h3>Name</h3>
-    <p>London is the capital city of England.</p>
+    <h3>Personal Details</h3>
+    <img src="homedesign/flipcard/avatar.jpg" style= "width: 40%">
+    <p>Name : Mr. Tan</p>
+    <p>Working Hours : Monday - Thursday 8.30am - 3.00pm</p>
+    <button class="active" >Update Personal Details</button>
 </div>
 
 <div id="Contact" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+    <h3>Contact Information</h3>
+    <p>Contact No. : 0147089221</p>
+    <p>Email : Tanlm@intishuttle.my</p>
+    <button class="active" >Update Contact Information</button>
 </div>
 
 <div id="Routes" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+    <h3>My Routes</h3>
+    <p>1. Inti International College Penang - Elit Avenue</p>
+    <img src="Map/map1.jpg" style= "width: 75%">
+    <p></p>
+    <button class="active" >Update Route</button>
 </div>
 
 <script>
