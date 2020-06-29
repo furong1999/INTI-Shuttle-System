@@ -78,7 +78,7 @@ while($row=mysqli_fetch_assoc($result)){
                         <strong class="card-title">Please fill in your details</strong>
                     </div>
                     <div class="card-body card-block">
-                        <form action="book.php" method="post">
+                        <form action="book1.php" method="post">
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name</label></div>
                                 <div class="col-12 col-md-9"><input type="text" id="text-input" name="username" value="" placeholder="Eg: ABC" style="color:black" class="form-control"></div>
