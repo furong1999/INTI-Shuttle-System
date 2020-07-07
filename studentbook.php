@@ -21,7 +21,6 @@ $fetchQuery = mysqli_query($conn,"SELECT * FROM schedule");
         <table id="booking-data" class="table table-striped table-bordered">
             <thead>
             <tr>
-
                 <th>ID</th>
                 <th>Driver Name</th>
                 <th>Time</th>
