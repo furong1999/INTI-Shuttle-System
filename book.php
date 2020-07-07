@@ -28,6 +28,29 @@ while($row=mysqli_fetch_assoc($result)){
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Are you sure to leave?</h3>
+                        </div>
+                        <div class="modal-body">
+                            Your booking will be not be save once you leave.
+                        </div>
+                        <div class="modal-footer">
+                            <a href="studentbook.php" class="btn btn-info" >Yes</a>
+                            <a href="#" class="btn btn-info" data-dismiss="modal">No</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="content">
     <div class="animated fadeIn" >
 
@@ -39,7 +62,7 @@ while($row=mysqli_fetch_assoc($result)){
                     </div>
                     <div class="card-body card-block">
 
-                        <form action="#" method="post">
+                        <form action="book1.php" method="post">
                             <input type="hidden" name="BusID" value="<?php echo $BusID?>">
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Bus Driver Name</label></div>
@@ -48,7 +71,7 @@ while($row=mysqli_fetch_assoc($result)){
 
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Time</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="time" style="color: dimgrey" value="<?php echo $starttime?>" class="form-control" disabled></div>
+                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="time" style="color: dimgrey" value="<?php echo $starttime?>" class="form-control" readonly="readonly"></div>
                             </div>
 
                             <div class="row form-group">
@@ -58,27 +81,12 @@ while($row=mysqli_fetch_assoc($result)){
 
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Route</label></div>
-                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="route" style="color: dimgrey" value="<?php echo $route?>" class="form-control" disabled></div>
+                                <div class="col-12 col-md-9"><input type="text" id="text-input" name="route" style="color: dimgrey" value="<?php echo $route?>" class="form-control" readonly="readonly"></div>
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="content">
-    <div class="animated fadeIn" >
+                            <div class="card-header">
+                                <strong class="card-title">Please fill in your details</strong>
+                            </div>
 
-        <div class="row" >
-            <div class="col-lg-6" >
-                <div class="card" >
-                    <div class="card-header">
-                        <strong class="card-title">Please fill in your details</strong>
-                    </div>
-                    <div class="card-body card-block">
-                        <form action="book1.php" method="post">
                             <div class="row form-group">
                                 <div class="col col-md-3"><label for="text-input" class=" form-control-label">Name</label></div>
                                 <div class="col-12 col-md-9"><input type="text" id="text-input" name="username" value="" placeholder="Eg: ABC" style="color:black" class="form-control"></div>
@@ -94,15 +102,17 @@ while($row=mysqli_fetch_assoc($result)){
                                 <div class="col-12 col-md-9"><input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" style="color:black" type="date"/></div>
                             </div>
                             <div>
-                                <button id="next"  type="submit" class="btn btn-lg btn-info btn-block" name="next-button">Next</button>
+                                <button type="submit" id="next"  class="btn btn-lg btn-info btn-block" name="next-button">Next</button>
+                                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-lg btn-danger btn-block">Cancel</a>
                             </div>
                         </form>
-
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- /#form -->
 
@@ -127,6 +137,5 @@ while($row=mysqli_fetch_assoc($result)){
 
 </body>
 </html>
-
 
 
