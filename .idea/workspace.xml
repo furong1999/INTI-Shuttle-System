@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="7e8799ab-8541-4057-bc98-205edca035d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contactus.php" beforeDir="false" afterPath="$PROJECT_DIR$/contactus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/headerr8.php" beforeDir="false" afterPath="$PROJECT_DIR$/headerr8.php" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c46d3ddd-2c9e-4266-a692-89199b58f4af" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="0189cfa9-c8e0-487d-988a-51a0089b8b13" />
@@ -32,10 +37,15 @@
       <find>fa-bel</find>
       <find>fa-bell</find>
     </findStrings>
+=======
+  <component name="ComposerSettings">
+    <execution />
+>>>>>>> Stashed changes
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< Updated upstream
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -47,11 +57,15 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1dRrtgcg7YZJMcB30YGIs8v3xgj" />
+=======
+  <component name="ProjectId" id="1dyrjobIKwuqoYhTxrmiAuF0nam" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< Updated upstream
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../merge" />
@@ -70,12 +84,21 @@
       <TestRunner directory="$PROJECT_DIR$/adminportal" scope="XML" />
       <method v="2" />
     </configuration>
+=======
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shuttlemerge" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+>>>>>>> Stashed changes
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="7e8799ab-8541-4057-bc98-205edca035d7" name="Default Changelist" comment="" />
       <created>1589894440726</created>
       <option name="number" value="Default" />
@@ -137,10 +160,22 @@
       <configuration name="Local Unit Test" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
+=======
+      <changelist id="c46d3ddd-2c9e-4266-a692-89199b58f4af" name="Default Changelist" comment="" />
+      <created>1593408311826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593408311826</updated>
+      <workItem from="1593408316119" duration="668000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> Stashed changes
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="452" y="43" key="#Local_Unit_Test" timestamp="1592812082226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -153,5 +188,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1593353442295" />
+=======
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593408383423">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593408383423" />
+>>>>>>> Stashed changes
   </component>
 </project>

@@ -54,7 +54,7 @@ session_start();
                                 }else if(isset($_SESSION['bus'])){
                                     echo '
                                     
-                                <li class="active"><a href="index.php">BusDriver1</a></li>
+                                <li class="active"><a href="index.php">Tan Chee Keong</a></li>
                                 <li><a href="">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>
@@ -62,7 +62,7 @@ session_start();
                                 }else if(isset($_SESSION['bus2'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">BusDriver2</a></li>
+                                  <li class="active"><a href="index.php">Kelvin Lim</a></li>
                                 <li><a href="">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>
@@ -70,7 +70,7 @@ session_start();
                                 } else if(isset($_SESSION['bus3'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">BusDriver3</a></li>
+                                  <li class="active"><a href="index.php">Nicky Leong</a></li>
                                 <li><a href="">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>

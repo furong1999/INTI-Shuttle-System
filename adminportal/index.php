@@ -48,14 +48,17 @@
                         </ul>
                     </li>
 
-                    <li class="menu-title">Notification</li><!-- /.menu-title -->
+                    <li class="menu-title">Admin</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-email"></i>Email</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench"></i>List of Action</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-bell-o"></i><a href="">Booking Notification </a></li>
-
+                            <li><i class="fa fa-user"></i><a href="registereduser.php">Registered User </a></li>
+                            <li><i class="fa fa-calendar-o"></i><a href="allbooking.php">Booking Made</a></li>
+                            <li><i class="menu-icon ti-email"></i><a href="bookingnotification.php">Send Email </a></li>
                         </ul>
                     </li>
+
+
 
                 </ul>
             </div><!-- /.navbar-collapse -->
