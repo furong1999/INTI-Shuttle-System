@@ -91,8 +91,15 @@ if(isset($_POST['add-button'])) {
                         <div class="card-body card-block">
                             <form action="adminadd.php" method="post" >
                                 <div class="row form-group">
-                                    <div class="col col-md-3"><label for="text-input" class=" form-control-label">Bus Driver Name</label></div>
-                                    <div class="col-12 col-md-9"><input type="text" id="text-input" name="drivername" placeholder="Eg: ABC" class="form-control"><small class="form-text text-muted">Please enter bus driver name.</small></div>
+                                    <div class="col col-md-3"><label for="select" class=" form-control-label">Bus Driver Name</label></div>
+                                    <div class="col-12 col-md-9">
+                                        <select name="drivername" id="select" class="form-control">
+                                            <option value="">Please select</option>
+                                            <option value="Tan Chee Keong">Tan Chee Keong</option>
+                                            <option value="Kelvin Lim">Kelvin Lim</option>
+                                            <option value="Nicky Leong">Nicky Leong</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div class="row form-group">
