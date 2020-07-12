@@ -46,7 +46,7 @@
 
       <div class="profile">
         <img src="iPortfolio/assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="busdriverhome.php">Alex Smith</a></h1>
+        <h1 class="text-light"><a href="busdriverhome.php">Tan Eng Heng</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -59,10 +59,10 @@
       <nav class="nav-menu">
         <ul>
           <li><a href="busdriverhome.php"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#Contact"><i class="bx bx-file-blank"></i> <span>Contact</span></a></li>
+          <li><a href=#><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href=#><i class="bx bx-file-blank"></i> <span>Contact</span></a></li>
           <li class="active"><a href="#portfolio"><i class="bx bx-book-content"></i> Routes</a></li>
-          <li><a href="busdriveredit.php"><i class="bx bx-envelope"></i> Edit Profile</a></li>
+          <li><a href=busdriveredit.php><i class="bx bx-envelope"></i> Edit Profile</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->

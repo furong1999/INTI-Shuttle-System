@@ -26,7 +26,7 @@
 
     <!-- Template Main CSS File -->
     <link href="iPortfolio/assets/css/style.css" rel="stylesheet">
-
+</head>
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     <!-- ======= Header ======= -->
@@ -35,7 +35,7 @@
 
             <div class="profile">
                 <img src="iPortfolio/assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="busdriverhome.php">Alex Smith</a></h1>
+                <h1 class="text-light"><a href="busdriverhome.php">Tan Eng Heng</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
