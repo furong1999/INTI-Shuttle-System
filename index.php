@@ -2,67 +2,100 @@
 <?php include("config.php");?>
 <html>
 <head>
-	<title>Bus Shuttle</title>
+	<title>INTI Shuttle System</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style>
 		th{
 			font-weight: normal;
 		}
-		
+		.jumbotron{margin-bottom: 0!important;}
 	</style>
 </head>
+<header>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>INTI Shuttle System</strong>
+          </a>
+        </div>
+      </div>
+    </header>
 
-<header class="w3-center w3-light-grey w3-padding-32 footer">
-  <p>Bus Shuttle </p>
-</footer>
+<main role="main">
 
+      <section class="jumbotron text-center">
+        <div class="container">
+          <!--h1 class="jumbotron-heading">Welcome to XYZ Booking</h1-->
+          <p class="lead text-muted">Book Your seats Today! Please select the seat to book bus from INTI College Penang</p>
+        </div>
+      </section>
 
-<div class="w3-row w3-padding-50" id="seat">
+      <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+              <p class="lead text-muted">Please select the seat to book bus from INTI College Penang</p>
+              </div>
+            </div>
+            <div class="row">
+            
+              <div class="col-6 pt-5">
+                  <span style="background-color:red; width: 30px;">&nbsp;&nbsp;&nbsp;</span> Booked &nbsp;&nbsp;&nbsp;
+                  <span style="background-color:green; width: 30px;">&nbsp;&nbsp;&nbsp;</span> Available
+              <?php
+                $divide = 4;
+                $inside = 2;
+                echo "<table border='1' style='margin-left:auto;margin-right:auto;'>";
 
+                for($i = 1; $i <= 40; $i++){
+                    $sql = $conn->query("select * from booking where seat_no= $i");
+                    $res = $sql->num_rows;
 
-<?php
-$divide = 4;
-$inside = 2;
-echo "<p><tab3>Book your tickets today!!</tab3></p>"; 
-echo "<table border='1' style='margin-left:auto;margin-right:auto;'>";
+                    if($i % $divide == 1){
+                        echo "<tr>";
+                    }
+                    if($res == 0)
+                        echo "<td align='center' style='background-color:green;'><a style='color:#000;'' href='javascript:' class='seatbook' data-id='$i'>".$i."</a></td>";
+                    else
+                        echo "<td align='center' style='background-color:red;'>".$i."</td>";
 
-for($i = 1; $i <= 40; $i++){
-    $sql = $conn->query("select * from booking where seat_no= $i");
-    $res = $sql->num_rows;
-    
-    if($i % $divide == 1){
-        echo "<tr>";
-    }
-    if($res == 0)
-        echo "<td align='center'><a href='javascript:' class='seatbook' data-id='$i'>".$i."</a></td>";
-    else
-        echo "<td align='center' style='background-color:red;'>".$i."</td>";
-    
-    if($i % $inside == 0 && $i % $divide != 0){
-        echo "<td width='40%'>&nbsp;</td>";
-    }
-    if($i % $divide == 0){
-        echo "</tr>";
-    }
-}
-/*echo "<tr>";
-for ($i = 41; $i <= 40; $i++) {
-    echo "<td width='15%' align='center'>".$i."</td>";
-}
-echo "</tr>";*/
+                    if($i % $inside == 0 && $i % $divide != 0){
+                        echo "<td width='40%'>&nbsp;</td>";
+                    }
+                    if($i % $divide == 0){
+                        echo "</tr>";
+                    }
+                }
+                /*echo "<tr>";
+                for ($i = 41; $i <= 40; $i++) {
+                    echo "<td width='15%' align='center'>".$i."</td>";
+                }
+                echo "</tr>";*/
 
-echo "</table>";
+                echo "</table>";
 
-?>
-    <br/><br/><br/>
-<!--input type = "submit" value = "Book Now!"-->
-</div>    
-</body>
-</html>
+                ?>
+                </div>
+                <div class="col-6">
+                    <img src="img/bus.png" alt='Bus Booking' width="100%"/>
+                </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="text-muted">
+          <div class="container">
+            <p class="float-right">
+              <a href="#">Back to top</a>
+            </p>
+            <p>Copyright @ 2020</p>
+            
+          </div>
+        </footer>
 <script type="text/javascript">
     $('.seatbook').click(function() {
         var id =  $(this).attr("data-id");
@@ -88,4 +121,5 @@ echo "</table>";
     });
     
 </script>    
-<?php //include("footer.php");?>
+</body>
+</html>
