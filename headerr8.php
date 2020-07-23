@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>INTI Sakura Restaurant</title>
+    <title>INTI Shuttle System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -21,6 +21,7 @@ session_start();
 
     <link rel="stylesheet" href="colorlib-regform-8/fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="colorlib-regform-8/css/style.css"
+
 
 
 </head>
@@ -45,48 +46,48 @@ session_start();
                                     echo'
                 
                                 <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
-                                <li><a href="#">Book Bus Schedule</a></li>
-                                 <li><a href="#">Booking History</a></li>                  
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
+                                <li><a href="studentbook.php">Book Bus Schedule</a></li>
+                                 <li><a href="bookinghistory.php">Booking History</a></li>                  
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
-                                } else if(isset($_SESSION['bus'])){
+                                }else if(isset($_SESSION['bus'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">Bus</a></li>
-                                <li><a href="">Your Schedule</a></li>
+                                <li class="active"><a href="index.php">Tan Chee Keong</a></li>
+                                <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
                                 }else if(isset($_SESSION['bus2'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">Bus</a></li>
-                                <li><a href="">Your Schedule</a></li>
+                                  <li class="active"><a href="index.php">Kelvin Lim</a></li>
+                                <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
-                                }else if(isset($_SESSION['bus3'])){
+                                } else if(isset($_SESSION['bus3'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">Bus</a></li>
-                                <li><a href="">Your Schedule</a></li>
+                                  <li class="active"><a href="index.php">Nicky Leong</a></li>
+                                <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="">Update Contact Details</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
                                 }else{
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
-                                <li><a href="#">Bus Schedule</a></li>                                               
+                                 <li class="active"><a href="index.php">Home</a></li>
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
+                                <li><a href="#">Bus Schedule</a></li>                                      
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="login.php">Sign In</a></li>
                                 <li><a href="signup.php">Sign Up</a></li>
-                                
+                                <li><a href="resetpassword.php">Forget Password</a></li>
                                 ';
                                 }?>
 

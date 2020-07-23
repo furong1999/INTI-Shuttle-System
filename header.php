@@ -1,6 +1,7 @@
 <?php
-session_start();
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,7 @@ session_start();
     <link href="homedesign/major/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="homedesign/major/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="homedesign/flipcard/style.css">
+
 
 
 
@@ -43,48 +45,46 @@ session_start();
                                     echo'
                 
                                 <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
-                                <li><a href="#">Book Bus Schedule</a></li>
-                                 <li><a href="#">Booking History</a></li>                  
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
+                                <li><a href="studentbook.php">Book Bus Schedule</a></li>
+                                 <li><a href="bookinghistory.php">Booking History</a></li>                  
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
                                 }else if(isset($_SESSION['bus'])){
                                     echo '
                                     
-                                <li class="active"><a href="index.php">BusDriver1</a></li>
-                                <li><a href="">Your Schedule</a></li>
-                                <li><a href="">Update Contact Details</a></li>
+                                <li class="active"><a href="busdriver/busdriver1home.php">Drive 1</a></li>
+                                <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="logout.php">Log out</a></li>
+                    
                                 ';
                                 }else if(isset($_SESSION['bus2'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">BusDriver2</a></li>
-                                <li><a href="">Your Schedule</a></li>
-                                <li><a href="">Update Contact Details</a></li>
+                                  <li class="active"><a href="busdriver/busdriver2home.php">Driver 2</a></li>
+                                  <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
                                 } else if(isset($_SESSION['bus3'])){
                                     echo '
                                     
-                                  <li class="active"><a href="index.php">BusDriver3</a></li>
-                                <li><a href="">Your Schedule</a></li>
-                                <li><a href="">Update Contact Details</a></li>
+                                  <li class="active"><a href="busdriver/busdriver3home.php">Driver 3</a></li>
+                                  <li><a href="busschedule.php">Your Schedule</a></li>
                                 <li><a href="logout.php">Log out</a></li>
                                 ';
                                 }else{
                                     echo '
                                     
                                  <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
                                 <li><a href="#">Bus Schedule</a></li>                                      
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="login.php">Sign In</a></li>
                                 <li><a href="signup.php">Sign Up</a></li>
-                                
+                                <li><a href="resetpassword.php">Forget Password</a></li>
                                 ';
                                 }?>
 

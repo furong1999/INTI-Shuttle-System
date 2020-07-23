@@ -1,9 +1,9 @@
 <?php
 session_start();
+
 ?>
 
-<?php
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,8 +68,8 @@ session_start();
                                     echo'
                 
                                 <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
                                 <li><a href="#">Book Bus Schedule</a></li>
                                  <li><a href="#">Booking History</a></li>                  
                                 <li><a href="contactus.php">Contact Us</a></li>
@@ -103,8 +103,8 @@ session_start();
                                     echo '
                                     
                                   <li class="active"><a href="index.php">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="busdrivercontact.php">Bus Drivers</a></li>
+                                <li><a href="index.html">About us</a></li>
+                                <li><a href="driver.html">Bus Drivers</a></li>
                                 <li><a href="#">Bus Schedule</a></li>                                               
                                 <li><a href="contactus.php">Contact Us</a></li>
                                 <li><a href="login.php">Sign In</a></li>
