@@ -3,44 +3,8 @@ require 'header.php';
 ?>
 
 
-<body style="background:#a4c5f2"></body>
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <img src="homedesign/flipcard/avatar.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-                <h2>Ms.Yenes</h2>
-                <h5>Service Manager</h5>
-                <p>Contact No. :04-2234060</p>
-                <p>Email Address : yenes@admin.intishuttle.my</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="column">
-        <div class="card">
-            <img src="homedesign/flipcard/avatar.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h2>Ms.Natalie</h2>
-                <h5>Admin</h5>
-                <p>Contact No. :04-2234058</p>
-                <p>Email Address : natalieooi@admin.intishuttle.my</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="column">
-        <div class="card">
-            <img src="homedesign/flipcard/avatar.jpg"  alt="John" style="width:100%">
-            <div class="container">
-                <h2>Ms.Janet Lim</h2>
-                <h5>Admin</h5>
-                <p>Contact No. :04-2234059</p>
-                <p>Email Address : limjanet@admin.intishuttle.my</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 
             <link rel="icon" type="image/png" href="contactform/images/icons/favicon.ico"/>
@@ -64,7 +28,7 @@ require 'header.php';
             <!--===============================================================================================-->
 
         <!--Message Form-->
-
+<br><br>
         <div class="container-contact100">
             <div class="wrap-contact100">
                 <form action="contactform.php" method="post">
@@ -138,4 +102,4 @@ require 'header.php';
             <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
             <script src="homedesign/major/js/custom.js"></script>
 
-    </div>
+

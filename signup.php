@@ -92,15 +92,6 @@ if(isset($_POST['signup-submit'])){
 
 
 
-<section class="ftco-section">
-    <div class="container-fluid px-4">
-        <div class="row justify-content-center mb-5 pb-2">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <span class="subheading">Signup</span>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!--Sign up form-->
     <div class="main">

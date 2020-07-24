@@ -1,6 +1,6 @@
 <?php
-require 'headerr.php';
-require 'dbconnect.php';
+require 'header.php';
+require"./adminportal/dbconnect.php";
 ?>
 <html>
 <head>
@@ -34,10 +34,10 @@ require 'dbconnect.php';
                 $fetchQuery = mysqli_query($conn, "SELECT * FROM schedule WHERE DriverName = 'Tan Chee Keong'");
             }
             else if(isset($_SESSION['bus2'])){
-                $fetchQuery = mysqli_query($conn, "SELECT * FROM schedule DriverName = 'Kelvin Lim'");
+                $fetchQuery = mysqli_query($conn, "SELECT * FROM schedule WHERE DriverName = 'Kelvin Lim'");
             }
             else if(isset($_SESSION['bus3'])){
-                $fetchQuery = mysqli_query($conn, "SELECT * FROM schedule DriverName = 'Nicky Leong'");
+                $fetchQuery = mysqli_query($conn, "SELECT * FROM schedule WHERE DriverName = 'Nicky Leong'");
             }
             $sr = 1;
             while($row=mysqli_fetch_array($fetchQuery)){

@@ -27,7 +27,6 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css" rel="stylesheet" />
 
 
-</head>
 
 <body>
 <!-- Left Side Navigation -->
@@ -48,12 +47,14 @@
                     </ul>
                 </li>
 
-                <li class="menu-title">Notification</li><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon ti-email"></i>Email</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-bell-o"></i><a href="">Booking Notification </a></li>
 
+                <li class="menu-title">Admin</li><!-- /.menu-title -->
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-wrench"></i>List of Action</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-user"></i><a href="registereduser.php">Registered User </a></li>
+                        <li><i class="fa fa-calendar-o"></i><a href="allbooking.php">Booking Made</a></li>
+                        <li><i class="menu-icon ti-email"></i><a href="bookingnotification.php">Send Email </a></li>
                     </ul>
                 </li>
 
@@ -88,34 +89,39 @@
         </div>
     </header>
     <!-- /#header -->
-<!-- /#right-panel -->
+    <div class="clearfix"></div>
+    <!-- Footer -->
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- /.site-footer -->
 
-<!--  Chart js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
+    <!-- /#right-panel -->
 
-<!--Chartist Chart-->
-<script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
+    <!--  Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
-<script src="assets/js/init/weather-init.js"></script>
+    <!--Chartist Chart-->
+    <script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
-<script src="assets/js/init/fullcalendar-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="assets/js/init/weather-init.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>
+    <script src="assets/js/init/fullcalendar-init.js"></script>
 
 
 
-</body>
+    </body>
 </html>

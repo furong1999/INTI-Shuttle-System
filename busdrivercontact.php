@@ -3,7 +3,7 @@ require 'header.php';
 ?>
 
 
-<body style="background:#a4c5f2 "></body>
+
     <div class="row">
     <div class="column">
     <div class="flip-card">
